@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+
+        <RootNamespace>Attribinter.Parameters</RootNamespace>
+
+        <Title>Attribinter.Parameters.Named.Abstractions</Title>
+        <Description>Provides abstractions related to Attribinter named parameters.</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Attribinter.Parameters.Named.Core\Attribinter.Parameters.Named.Core.csproj" />
+    </ItemGroup>
+
+</Project>
