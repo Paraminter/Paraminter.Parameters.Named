@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+
+        <RootNamespace>Paraminter.Parameters</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+
+        <PackageReference Include="Paraminter.Tests.Common" />
+
+        <PackageReference Include="xunit" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+
+        <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named.Abstractions\Paraminter.Parameters.Named.Abstractions.csproj" />
+        <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named.Core\Paraminter.Parameters.Named.Core.csproj" />
+        <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named\Paraminter.Parameters.Named.csproj" />
+    </ItemGroup>
+
+</Project>
