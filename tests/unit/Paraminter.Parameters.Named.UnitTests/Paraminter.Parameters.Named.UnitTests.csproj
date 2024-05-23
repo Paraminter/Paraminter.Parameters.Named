@@ -9,13 +9,14 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.NET.Test.Sdk" />
 
-        <PackageReference Include="Paraminter.Tests.Common" />
+        <PackageReference Include="Moq" />
 
         <PackageReference Include="xunit" />
         <PackageReference Include="xunit.runner.visualstudio" />
 
         <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named.Abstractions\Paraminter.Parameters.Named.Abstractions.csproj" />
         <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named.Core\Paraminter.Parameters.Named.Core.csproj" />
+        <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named.DependencyInjection\Paraminter.Parameters.Named.DependencyInjection.csproj" />
         <ProjectReference Include="..\..\..\src\Paraminter.Parameters.Named\Paraminter.Parameters.Named.csproj" />
     </ItemGroup>
 
