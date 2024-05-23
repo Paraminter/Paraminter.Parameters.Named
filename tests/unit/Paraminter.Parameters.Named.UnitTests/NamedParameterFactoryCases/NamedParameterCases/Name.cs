@@ -4,8 +4,6 @@ using Xunit;
 
 public sealed class Name
 {
-    private string Target() => Fixture.Sut.Name;
-
     private readonly IParameterFixture Fixture = ParameterFixtureFactory.Create();
 
     [Fact]
@@ -15,4 +13,6 @@ public sealed class Name
 
         Assert.Same(Fixture.Name, result);
     }
+
+    private string Target() => Fixture.Sut.Name;
 }
