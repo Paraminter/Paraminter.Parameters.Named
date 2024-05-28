@@ -7,7 +7,7 @@ public sealed class Name
     private readonly IParameterFixture Fixture = ParameterFixtureFactory.Create();
 
     [Fact]
-    public void ReturnsSameAsConstructedWith()
+    public void ReturnsName()
     {
         var result = Target();
 
