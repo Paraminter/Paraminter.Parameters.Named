@@ -13,13 +13,16 @@ internal static class ParameterFixtureFactory
         return new ParameterFixture(sut, name);
     }
 
-    private sealed class ParameterFixture : IParameterFixture
+    private sealed class ParameterFixture
+        : IParameterFixture
     {
         private readonly INamedParameter Sut;
 
         private readonly string Name;
 
-        public ParameterFixture(INamedParameter sut, string name)
+        public ParameterFixture(
+            INamedParameter sut,
+            string name)
         {
             Sut = sut;
 
