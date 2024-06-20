@@ -1,10 +1,10 @@
-﻿namespace Paraminter.Parameters.NamedParameterFactoryCases.NamedParameterCases;
+﻿namespace Paraminter.Parameters.NamedParameter;
 
 using Xunit;
 
 public sealed class Name
 {
-    private readonly IParameterFixture Fixture = ParameterFixtureFactory.Create();
+    private readonly IFixture Fixture = FixtureFactory.Create();
 
     [Fact]
     public void ReturnsName()

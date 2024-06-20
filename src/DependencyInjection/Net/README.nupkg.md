@@ -1,4 +1,4 @@
-# Paraminter.Parameters.Named.DependencyInjection
+# Paraminter.Parameters.Named.DI.Net
 
 Allows the services provided by `Paraminter.Parameters.Named` to be registered with .NET DI-containers.
 

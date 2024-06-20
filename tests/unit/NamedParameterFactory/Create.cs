@@ -1,4 +1,4 @@
-﻿namespace Paraminter.Parameters.NamedParameterFactoryCases;
+﻿namespace Paraminter.Parameters;
 
 using System;
 
@@ -6,7 +6,7 @@ using Xunit;
 
 public sealed class Create
 {
-    private readonly IFactoryFixture Fixture = FactoryFixtureFactory.Create();
+    private readonly IFixture Fixture = FixtureFactory.Create();
 
     [Fact]
     public void NullName_ThrowsArgumentNullException()
