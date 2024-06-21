@@ -33,13 +33,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "Depe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net", "Net", "{4CBBA121-5E68-4C05-BE6C-78409FCD076B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_NamedServices", "tests\integration\DependencyInjection\Net\NamedServices\IT_NamedServices.csproj", "{DDB76E53-2E4B-4A9E-B52C-3F862902816D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IT_NamedParameterServices", "tests\integration\DependencyInjection\Net\NamedParameterServices\IT_NamedParameterServices.csproj", "{DDB76E53-2E4B-4A9E-B52C-3F862902816D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unit", "unit", "{10D359C5-1A32-4E19-A332-70BCE9DF003A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_NamedParameterFactory", "tests\unit\NamedParameterFactory\UT_NamedParameterFactory.csproj", "{FEAF9A3A-9C94-4FB1-89DF-9027BC7D53C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_NamedServices", "tests\unit\NamedServices\UT_NamedServices.csproj", "{B5141376-1594-418D-AC88-7EBC179CC2C3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DependencyInjection", "DependencyInjection", "{0E9DF989-981B-47CE-BEB8-E0666BFAC71D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Net", "Net", "{CEFD224E-5597-44F5-8B93-880B2966A0F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UT_NamedParameterServices", "tests\unit\DependencyInjection\Net\NamedParameterServices\UT_NamedParameterServices.csproj", "{A079F0B7-FC53-40FF-8A0A-B9B83F6FEE6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,16 +75,13 @@ Global
 		{FEAF9A3A-9C94-4FB1-89DF-9027BC7D53C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEAF9A3A-9C94-4FB1-89DF-9027BC7D53C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEAF9A3A-9C94-4FB1-89DF-9027BC7D53C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5141376-1594-418D-AC88-7EBC179CC2C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5141376-1594-418D-AC88-7EBC179CC2C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5141376-1594-418D-AC88-7EBC179CC2C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5141376-1594-418D-AC88-7EBC179CC2C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A079F0B7-FC53-40FF-8A0A-B9B83F6FEE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A079F0B7-FC53-40FF-8A0A-B9B83F6FEE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A079F0B7-FC53-40FF-8A0A-B9B83F6FEE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A079F0B7-FC53-40FF-8A0A-B9B83F6FEE6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E726D58B-007E-40FD-B070-CD388696D892}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D2A4906A-5FFC-409D-B6C0-471E7D311C5A} = {9AAA2151-53E2-4111-84E6-8EF580AB818F}
@@ -94,6 +95,11 @@ Global
 		{DDB76E53-2E4B-4A9E-B52C-3F862902816D} = {4CBBA121-5E68-4C05-BE6C-78409FCD076B}
 		{10D359C5-1A32-4E19-A332-70BCE9DF003A} = {FAB04434-E498-4F65-99DC-A96E64A266C5}
 		{FEAF9A3A-9C94-4FB1-89DF-9027BC7D53C0} = {10D359C5-1A32-4E19-A332-70BCE9DF003A}
-		{B5141376-1594-418D-AC88-7EBC179CC2C3} = {10D359C5-1A32-4E19-A332-70BCE9DF003A}
+		{0E9DF989-981B-47CE-BEB8-E0666BFAC71D} = {10D359C5-1A32-4E19-A332-70BCE9DF003A}
+		{CEFD224E-5597-44F5-8B93-880B2966A0F3} = {0E9DF989-981B-47CE-BEB8-E0666BFAC71D}
+		{A079F0B7-FC53-40FF-8A0A-B9B83F6FEE6B} = {CEFD224E-5597-44F5-8B93-880B2966A0F3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E726D58B-007E-40FD-B070-CD388696D892}
 	EndGlobalSection
 EndGlobal

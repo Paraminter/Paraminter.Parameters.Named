@@ -13,7 +13,7 @@ public sealed class AddParaminterNamedParameters
     private static void Target(
         IServiceCollection services)
     {
-        NamedServices.AddParaminterNamedParameters(services);
+        NamedParameterServices.AddParaminterNamedParameters(services);
     }
 
     private static void ServiceCanBeResolved<TService>()
