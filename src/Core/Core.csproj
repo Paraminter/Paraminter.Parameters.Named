@@ -4,7 +4,7 @@
         <AssemblyName>Paraminter.Parameters.Named.Core</AssemblyName>
 
         <PackageId>Paraminter.Parameters.Named.Core</PackageId>
-        <Description>Defines Paraminter named parameters.</Description>
+        <Description>Defines the core components of Paraminter named parameters.</Description>
     </PropertyGroup>
 
 </Project>
