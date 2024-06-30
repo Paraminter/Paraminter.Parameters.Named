@@ -1,4 +1,4 @@
-# Paraminter.Parameters.Named
+# Paraminter.Parameters.Named.Implementation.General
 
 Provides general implementations of services related to `Paraminter` named parameters.
 

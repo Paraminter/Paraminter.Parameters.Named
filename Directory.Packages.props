@@ -5,13 +5,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
-        <PackageVersion Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
 
         <PackageVersion Include="Moq" Version="4.20.70" />
 
         <PackageVersion Include="Paraminter.Logo" Version="2.0.0-alpha.10" />
+        <PackageVersion Include="Paraminter.Queries.Abstractions" Version="8.0.0-alpha.8" />
+        <PackageVersion Include="Paraminter.Queries.Core" Version="8.0.0-alpha.8" />
 
         <PackageVersion Include="SonarAnalyzer.CSharp" Version="9.24.0.89429" />
 

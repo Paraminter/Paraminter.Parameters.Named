@@ -1,14 +1,18 @@
 ﻿namespace Paraminter.Parameters.NamedParameter;
 
+using Moq;
+
 internal static class FixtureFactory
 {
-    public static IFixture Create()
+    public static IFixture Create(string name)
     {
-        var name = string.Empty;
+        Mock<IGetNamedParameterQuery> queryMock = new();
 
-        INamedParameterFactory factory = new NamedParameterFactory();
+        queryMock.Setup(static (query) => query.Name).Returns(name);
 
-        var sut = factory.Create(name);
+        IQueryHandler<IGetNamedParameterQuery, INamedParameter> factory = new GetNamedParameterQueryHandler();
+
+        var sut = factory.Handle(queryMock.Object);
 
         return new Fixture(sut, name);
     }
