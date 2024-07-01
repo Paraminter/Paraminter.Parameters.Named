@@ -6,11 +6,11 @@ internal static class FixtureFactory
 {
     public static IFixture Create(string name)
     {
-        Mock<IGetNamedParameterQuery> queryMock = new();
+        Mock<IGetNamedParameterByNameQuery> queryMock = new();
 
         queryMock.Setup(static (query) => query.Name).Returns(name);
 
-        IQueryHandler<IGetNamedParameterQuery, INamedParameter> factory = new GetNamedParameterQueryHandler();
+        IQueryHandler<IGetNamedParameterByNameQuery, INamedParameter> factory = new GetNamedParameterByNameQueryHandler();
 
         var sut = factory.Handle(queryMock.Object);
 
