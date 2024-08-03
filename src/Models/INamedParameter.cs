@@ -1,4 +1,4 @@
-﻿namespace Paraminter.Parameters;
+﻿namespace Paraminter.Parameters.Named.Models;
 
 /// <summary>Represents a named parameter.</summary>
 public interface INamedParameter
