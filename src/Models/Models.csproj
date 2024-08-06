@@ -9,4 +9,8 @@
         <Description>Defines models for Paraminter named parameters.</Description>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Paraminter.Associators.Models" />
+    </ItemGroup>
+
 </Project>
