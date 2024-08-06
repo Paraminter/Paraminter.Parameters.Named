@@ -1,6 +1,6 @@
 ﻿namespace Paraminter.Parameters.Named.Models;
 
-using Paraminter.Associators.Models;
+using Paraminter.Parameters.Models;
 
 /// <summary>Represents a named parameter.</summary>
 public interface INamedParameter
